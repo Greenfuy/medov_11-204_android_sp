@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">hw</string>
+    <string name="app_name">Hw</string>
+    <string name="start">Start</string>
+    <string name="height" />
 </resources>
