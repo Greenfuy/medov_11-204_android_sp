@@ -15,13 +15,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val nameEditText = findViewById<EditText>(R.id.editNameText)
-        val heightEditText = findViewById<EditText>(R.id.editHeightNumber)
-        val weightEditText = findViewById<EditText>(R.id.editWeightNumber)
-        val ageEditText = findViewById<EditText>(R.id.editAgeNumber)
-        val answer = findViewById<TextView>(R.id.answerTextView)
+        val nameEditText = findViewById<EditText>(R.id.edit_text_name)
+        val heightEditText = findViewById<EditText>(R.id.edit_number_height)
+        val weightEditText = findViewById<EditText>(R.id.edit_number_weight)
+        val ageEditText = findViewById<EditText>(R.id.edit_number_age)
+        val answer = findViewById<TextView>(R.id.text_view_answer)
 
-        val clickButton = findViewById<Button>(R.id.startButton)
+        val clickButton = findViewById<Button>(R.id.btn_start)
 
         clickButton?.setOnClickListener {
             val calculated = calculate(nameEditText, heightEditText, weightEditText, ageEditText)
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             if (calculated != -1) {
                 answer.text = "Answer: $calculated"
             } else {
-                answer.text = "Incorrect data"
+                answer.text = R.string.incorrect_data.toString()
             }
         }
     }
