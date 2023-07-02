@@ -19,18 +19,24 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         binding?.run {
             btnToGeneral.setOnClickListener {
-                findNavController().navigate(R.id.action_settingsFragment_to_anotherFragment)
-                Snackbar.make(root, "Settings", Snackbar.LENGTH_LONG).show()
+                findNavController().navigate(
+                    R.id.action_settingsFragment_to_anotherFragment,
+                    AnotherFragment.createBundle("Settings")
+                )
             }
 
             btnToHistory.setOnClickListener {
-                findNavController().navigate(R.id.action_settingsFragment_to_anotherFragment)
-                Snackbar.make(root, "Settings", Snackbar.LENGTH_LONG).show()
+                findNavController().navigate(
+                    R.id.action_settingsFragment_to_anotherFragment,
+                    AnotherFragment.createBundle("Settings")
+                    )
             }
 
             btnToAboutUs.setOnClickListener {
-                findNavController().navigate(R.id.action_settingsFragment_to_anotherFragment)
-                Snackbar.make(root, "Settings", Snackbar.LENGTH_LONG).show()
+                findNavController().navigate(
+                    R.id.action_settingsFragment_to_anotherFragment,
+                    AnotherFragment.createBundle("Settings")
+                )
             }
         }
     }

@@ -19,13 +19,17 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
         binding?.run {
             btnToLogIn.setOnClickListener {
-                findNavController().navigate(R.id.action_profileFragment_to_anotherFragment)
-                Snackbar.make(root, "Profile", Snackbar.LENGTH_LONG).show()
+                findNavController().navigate(
+                    R.id.action_profileFragment_to_anotherFragment,
+                AnotherFragment.createBundle("Profile")
+                )
             }
 
             btnToSignUp.setOnClickListener {
-                findNavController().navigate(R.id.action_profileFragment_to_anotherFragment)
-                Snackbar.make(root, "Profile", Snackbar.LENGTH_LONG).show()
+                findNavController().navigate(
+                    R.id.action_profileFragment_to_anotherFragment,
+                    AnotherFragment.createBundle("Profile")
+                    )
             }
         }
     }
