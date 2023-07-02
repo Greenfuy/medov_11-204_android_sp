@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">hw</string>
+    <string name="abyssinian_cat_description">A breed of domestic short-haired cat with a distinctive tabby coat, in which individual hairs are banded with different colors.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id_example">ID: 1</string>
+    <string name="desc_example">text</string>
+    <string name="name_example">Abyssinian</string>
 </resources>
