@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">hw</string>
+    <string name="app_name">Hw</string>
+    <string name="start">Start</string>
+    <string name="height" />
+    <string name="incorrect_data">Incorrect data</string>
+    <string name="enter_your_name">Enter your name…</string>
+    <string name="enter_your_height">Enter your height…</string>
+    <string name="enter_your_weight">Enter your weight…</string>
+    <string name="enter_your_age">Enter your age…</string>
 </resources>
