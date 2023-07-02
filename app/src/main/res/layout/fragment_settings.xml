@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="198dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="@string/settings"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_to_general"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_to_general"
+            android:layout_width="256dp"
+            android:layout_height="56dp"
+            android:text="@string/general"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_to_history"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_settings"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_to_history"
+            android:layout_width="256dp"
+            android:layout_height="56dp"
+            android:text="@string/history"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_to_about_us"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_to_general"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_to_about_us"
+            android:layout_width="256dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="256dp"
+            android:text="@string/about_us"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_to_history" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
