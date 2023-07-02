@@ -12,7 +12,7 @@
         android:layout_width="220dp"
         android:layout_height="64dp"
         android:layout_marginTop="16dp"
-        android:text="@string/calculate"
+        android:text="@string/start"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/text_view_answer"
